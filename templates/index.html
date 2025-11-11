@@ -3,19 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Small Flask Website</title>
+    <title>My Flask Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
         <h1>Welcome to My Flask Website!</h1>
-        <p class="subtitle">This site uses Flask + HTML + CSS 🎨</p>
+        <p class="subtitle">Now with an image below 👇</p>
+        <img src="{{ url_for('static', filename='images/flask_logo.png') }}" alt="Flask Logo" class="hero-image">
     </header>
 
     <main>
         <section>
             <h2>About This Site</h2>
-            <p>This is a simple Flask project with an HTML template and a static CSS file for styling.</p>
+            <p>This page is rendered by Flask using HTML templates and static assets.</p>
         </section>
     </main>
 
